@@ -1,22 +1,20 @@
+
+
 pipeline { 
     agent any  
     stages { 
-        stage('Testing') {
+        stage('sample1') {
           steps {
-            echo 'running Tests'
-            sh 'mvn test'
+            echo 'summition'
           }
         }
-        stage('Build') { 
+        stage('sample 2') { 
             steps { 
-               echo 'Building jar files...' 
-               sh 'mvn package'
+               echo 'addition...' 
+               sh 'python3 main.py'
+              //bat 'mvn package'
             }
         }
-    }
-       tools{
-        maven 'maven-system'
-        jdk 'jdk-system'
-    }
-
+   
 }
+    }
