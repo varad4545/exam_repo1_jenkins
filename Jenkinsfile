@@ -5,7 +5,7 @@ pipeline {
     stages { 
         stage('sample1') {
           steps {
-//             echo 'summition'
+            echo 'summition'
           }
         }
         stage('sample 2') { 
