@@ -5,13 +5,13 @@ pipeline {
     stages { 
         stage('sample1') {
           steps {
-            echo 'summition'
+//             echo 'summition'
           }
         }
         stage('sample 2') { 
             steps { 
                echo 'addition...' 
-               sh 'python3 main.py'
+//                sh 'python3 main.py'
     
             }
         }
